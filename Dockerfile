@@ -18,6 +18,10 @@ RUN apt update \
 	&& apt-get clean -y \
     && rm -rf /var/lib/{apt,dpkg,cache,log,tmp}/*
 
+# copie des cron
+COPY lufi-cron /etc/cron.d/lufi-cron
+RUN chmod 0644 /etc/cron.d/lufi-cron
+
 RUN cpan Carton
 WORKDIR /lufi
 

@@ -15,6 +15,7 @@ if [ "$command" = "start" ]; then
     carton exec hypnotoad /lufi/script/lufi
 elif [ "$command" = "cron" ]; then
     echo "Exécution des cron"
+    cron -f
     # Ajoutez ici la commande que vous souhaitez exécuter pour "commande2"
 else
     echo "Commande non reconnue: $command"
