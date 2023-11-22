@@ -8,6 +8,7 @@ RUN apt update \
 	&& apt install -y \
     wget \
     unzip \
+    cron \
 	build-essential \
 	libssl-dev \
     zlib1g-dev \
@@ -35,6 +36,6 @@ RUN chmod a+x /lufi/docker-entrypoint.sh
 RUN carton install --deployment --without=test --without=mysql \
     && rm -rf local/cache/* local/man/*
 
-ENTRYPOINT ["/lufi/docker-entrypoint.sh"]
 
 EXPOSE 8081
+ENTRYPOINT ["/lufi/docker-entrypoint.sh"]
