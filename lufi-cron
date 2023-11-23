@@ -1,0 +1,2 @@
+0 2 * * * root cd /lufi && carton exec script/lufi cron cleanfiles --mode production
+0 4 * * * root cd /lufi && carton exec script/lufi cron cleanbdd --mode production

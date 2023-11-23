@@ -1,0 +1,14 @@
+version: "3.7"
+
+volumes:
+  files:
+
+services:
+  lufi:
+    build: ./
+    container_name: lufi-app
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+    volumes:
+      - files:/lufi/files
