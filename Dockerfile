@@ -33,6 +33,8 @@ RUN wget https://framagit.org/fiat-tux/hat-softwares/lufi/-/archive/${LUFI_VERSI
 
 
 COPY lufi.conf /lufi/lufi.conf
+RUN mkdir -p themes/megalis
+COPY themes/megalis /lufi/themes/megalis
 COPY docker-entrypoint.sh /lufi/docker-entrypoint.sh
 RUN chmod a+x /lufi/docker-entrypoint.sh
 
