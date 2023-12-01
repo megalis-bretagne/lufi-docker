@@ -531,7 +531,7 @@ function updateProgressBar(data) {
                 // Add copy all and mailto buttons
                 var misc = $('#misc');
                 if (misc.html() === '' && !isGuest) {
-                    misc.html('<a href="#" id="copyall" class="btn btn-info">'+i18n.copyAll+'</a> <a id="mailto" href="'+actionURL+'m?links='+links+'" class="btn btn-info">'+i18n.mailTo+'</a>');
+                    misc.html('<a href="#" id="copyall" class="btn btn-info indigo darken-3">'+i18n.copyAll+'</a> <a id="mailto" href="'+actionURL+'m?links='+links+'" class="btn btn-info indigo darken-3">'+i18n.mailTo+'</a>');
                     $('#copyall').on('click', copyAllToClipboard);
                 } else {
                     updateMailLink();
