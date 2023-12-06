@@ -10,7 +10,7 @@ fi
 if [ "$command" = "start" ]; then
     carton exec hypnotoad /lufi/script/lufi
 elif [ "$command" = "cron" ]; then
-    echo "Executing cron"
+    echo "Executing cron" >> /lufi/log/production.log
     crontab /etc/cron.d/lufi-cron
     cron -f &
 else
