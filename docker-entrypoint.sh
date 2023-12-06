@@ -11,6 +11,7 @@ if [ "$command" = "start" ]; then
     carton exec hypnotoad /lufi/script/lufi
 elif [ "$command" = "cron" ]; then
     echo "Executing cron"
+    crontab /etc/crond.d/lufi-cron
     cron -f
 else
     echo "Unrecognized command: $command"
