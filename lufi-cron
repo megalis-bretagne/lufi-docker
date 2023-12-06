@@ -1,3 +1,4 @@
-0 2 * * * root cd /lufi && carton exec script/lufi cron cleanfiles --mode production
-0 4 * * * root cd /lufi && carton exec script/lufi cron cleanbdd --mode production
-0 1 * * * root cd /lufi && carton exec script/lufi cron watch >> /lufi/log/production.log
+* 4 * * * echo "$(date) Launch cron cleanfiles" >> /lufi/log/production.log 2>&1
+* 4 * * * cd /lufi && /usr/local/bin/carton exec /lufi/script/lufi cron cleanfiles >> /lufi/log/production.log 2>&1
+* 2 * * * echo "$(date) Launch cron cleanbdd" >> /lufi/log/production.log 2>&1
+* 2 * * * cd /lufi && /usr/local/bin/carton exec /lufi/script/lufi cron cleanbdd >> /lufi/log/production.log 2>&1

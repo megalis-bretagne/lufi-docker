@@ -12,7 +12,7 @@ if [ "$command" = "start" ]; then
 elif [ "$command" = "cron" ]; then
     echo "Executing cron"
     crontab /etc/cron.d/lufi-cron
-    cron -f
+    cron -f &
 else
     echo "Unrecognized command: $command"
     exit 1
