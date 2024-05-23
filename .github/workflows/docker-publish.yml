@@ -7,9 +7,9 @@ name: Build Docker
 
 on:
   push:
-    branches: ["main","develop"]
+    branches: ["main"]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    tags: [ '*.*.*' ]
 
 
 env:

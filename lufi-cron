@@ -1,4 +1,4 @@
-0 4 * * * echo "$(date) Launch cron cleanfiles" >> /lufi/log/production.log 2>&1
-0 4 * * * cd /lufi && /usr/local/bin/carton exec /lufi/script/lufi cron cleanfiles >> /lufi/log/production.log 2>&1
-0 2 * * * echo "$(date) Launch cron cleanbdd" >> /lufi/log/production.log 2>&1
-0 2 * * * cd /lufi && /usr/local/bin/carton exec /lufi/script/lufi cron cleanbdd >> /lufi/log/production.log 2>&1
+0 4 * * * echo "$(date) Launch cron cleanfiles" >> /home/nonroot/lufi/log/production.log 2>&1
+0 4 * * * cd /home/nonroot/lufi && /usr/local/bin/carton exec /lufi/script/lufi cron cleanfiles >> /home/nonroot/log/production.log 2>&1
+0 2 * * * echo "$(date) Launch cron cleanbdd" >> /home/nonroot/lufi/log/production.log 2>&1
+0 2 * * * cd /home/nonroot/lufi && /usr/local/bin/carton exec /home/nonroot/lufi/script/lufi cron cleanbdd >> /home/nonroot/lufi/log/production.log 2>&1

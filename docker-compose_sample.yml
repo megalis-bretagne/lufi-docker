@@ -1,0 +1,35 @@
+version: "3.7"
+
+volumes:
+  files:
+
+configs:
+  lufi_config.v1:
+    file: config/opensignature/Config.php
+
+services:
+  lufi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lufi-app
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+    configs:
+      - source: lufi_config.v1
+        target: /home/nonroot/lufi/lufi.conf
+    volumes:
+      - files:/lufi/files
+
+  
+  lufi-cron:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: cron
+    configs:
+      - source: lufi_config.v1
+        target: /home/nonroot/lufi/lufi.conf
+    volumes:
+       - files:/lufi/files
