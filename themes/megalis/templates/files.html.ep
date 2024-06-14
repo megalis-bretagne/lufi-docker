@@ -39,5 +39,5 @@
     </table>
 </div>
 
-%= javascript '/partial/files.js.ep'
+%= javascript '/partial/files.js'
 %= javascript '/js/lufi-files.js'
