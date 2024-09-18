@@ -41,7 +41,7 @@ RUN wget https://framagit.org/fiat-tux/hat-softwares/lufi/-/archive/${LUFI_VERSI
     && rm -rf /home/nonroot/lufi/lufi-${LUFI_VERSION}.zip
 
 
-COPY --chown=nonroot:nonroot lufi.conf /
+COPY --chown=nonroot:nonroot lufi.conf .
 RUN mkdir -p themes/megalis/
 COPY themes/megalis themes/megalis/
 COPY --chmod=760 --chown=nonroot:nonroot docker-entrypoint.sh /home/nonroot/lufi/docker-entrypoint.sh
