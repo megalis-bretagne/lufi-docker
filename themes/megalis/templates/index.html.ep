@@ -120,7 +120,7 @@
     <div class="row">
         <div id="files" class="col s12 m12">
             <h2><%= l('Drop files here') %></h2>
-            <p id="max-file-size"></p>
+            <p id="max-file-size-mo"></p>
             <p><small><%= l('or') %></small></p>
             <label>
                 <span id="file-browser-span" class="btn disabled waves-effect waves-light"><%= l('Click to open the file browser') %></span>
@@ -166,4 +166,5 @@
 %= javascript '/js/jszip.min.js'
 %= javascript '/js/lufi-notifications.js'
 %= javascript '/js/lufi-up.js'
+%= javascript '/js/lufi-custom.js'
 % }
