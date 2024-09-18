@@ -10,13 +10,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="icon" type="image/png" href="<%= url_for('/img/favicon.png') %>">
-        <link rel="icon" sizes="128x128" href="<%= url_for('/img/lufi128.png') %>">
-        <link rel="icon" sizes="196x196" href="<%= url_for('/img/lufi196.png') %>">
-        <link rel="apple-touch-icon" href="<%= url_for('/img/lufi60.png') %>">
-        <link rel="apple-touch-icon" sizes="76x76" href="<%= url_for('/img/lufi76.png') %>">
-        <link rel="apple-touch-icon" sizes="120x120" href="<%= url_for('/img/lufi120.png') %>">
-        <link rel="apple-touch-icon" sizes="152x152" href="<%= url_for('/img/lufi152.png') %>">
-        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="<%= url_for('/img/lufi128.png') %>">
         %= stylesheet '/css/materialize.min.css'
         %= stylesheet '/css/lufi.css'
         %= javascript '/js/ie-detection.js'
@@ -29,7 +22,6 @@
                     <div>
                         <img src="<%= url_for('/img/megalis.png') %>" alt="logo Megalis" class="logo_megalis">
                     </div>
-                    <div> <img src="<%= url_for('/img/lufi-min.png') %>" alt="logo lufi"></div>
                     <div><%= config('instance_name') %></div>
                 </a>
                 <a href="#" data-activates="mobile" class="button-collapse"><i class="mdi-navigation-menu black-text"></i></a>
