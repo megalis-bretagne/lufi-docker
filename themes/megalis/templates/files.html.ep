@@ -9,12 +9,6 @@
     <%= l('Rows in red mean that the files have expired and are no longer available.') %>
 </p>
 <div class="files-buttons">
-    <a href="#" id="exportStorage"   class="btn left-mg indigo darken-3"><%= l('Export localStorage data') %></a>
-    <a href="#" id="purgeExpired"    class="btn left-mg indigo darken-3"><%= l('Purge expired files from localStorage') %></a>
-    <a href="#" id="clickImport"     class="btn left-mg indigo darken-3"><%= l('Import localStorage data') %></a>
-    <span class="file-field input-field">
-        <input type="file" id="import" onchange="importStorage(this.files)">
-    </span>
     <a href="#" id="invertSelection" class="btn left-mg indigo darken-3"><%= l('Invert selection') %></a>
     <a href="#" class="btn left-mg indigo darken-3 disabled" id="mass-delete" disabled><%= l('Delete selected files') %></a>
 </div>
