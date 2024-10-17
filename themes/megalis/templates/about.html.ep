@@ -1,0 +1,37 @@
+% # vim:set sw=4 ts=4 sts=4 ft=html.epl expandtab:
+<div class="text-left">
+    <h3>Qu’est-ce que Transfert de fichiers</h3>
+
+
+    <p>Transfert de fichier est un service disponible avec le Bouquet Mégalis Bretagne 2025-2029. Il est accessible pour tous les utilisateurs disposant d’un compte Mégalis.</p>
+    
+    <h3><%= l('Privacy') %></h3>
+    <p>Tous Les fichiers déposés sur Transfert de Fichiers sont chiffrés avant l’envoi au serveur. Mégalis Bretagne ne peut pas voir le contenu de vos documents. Seulement le nom du fichier, sa taille et son type (texte, vidéo, son…).
+    <br>
+    Vous n’avez pas besoin de vous enregistrer pour envoyer des fichiers mais notez que, pour des raisons légales, votre adresse IP sera enregistrée quand vous envoyez un fichier.
+    </p>
+    <h3>Comment ça marche ?</h3>
+    <p>Transfert de Fichiers est très simple d’utilisation.
+    <br>
+    Faites un "glisser/déposer" de vos fichiers dans la zone prévue à cet effet ou téléversez un fichier en le sélectionnant depuis votre navigateur de fichier.
+    <br>
+    Une fois, cette manipulation effectuée, vous récupérerez deux liens par fichier : un lien de téléchargement et un lien pour supprimer le fichier quand vous le souhaitez.
+
+    <br>
+    <br>
+    Vous pouvez voir la liste de vos fichiers en cliquant sur le lien « Mes fichiers » en haut à droite de cette page.
+    Vous avez accès à un espace de stockage de 2 Go maximum et les fichiers sont effacés au bout de 7 jours par défaut.
+    <br>
+    Si besoin, n’hésitez pas à consulter les tutoriels sur le site de Mégalis Bretagne : https://services.megalis.bretagne.bzh/tutoriels/
+
+
+
+    <h3>Comment signaler un problème ?</h3>
+    <p>Mégalis Bretagne met à la disposition des usagers une <a href="https://services.megalis.bretagne.bzh/assistance/" class="classic" title='assistance'>assistance des services numérique</a>. 
+    Vous pouvez la contacter si vous avez une question ou si vous souhaiter un accompagnement sur Transfert de Fichiers. 
+    Vous pouvez également envoyer un <a href="https://services.megalis.bretagne.bzh/formulaire-de-contact-collectivites/" class="classic" title='formulaire'>formulaire</a> si vous avez besoin de plus d’information.</p>
+
+
+    <h3><%= l('Version') %></h3>
+    <p>0.7.0</p>
+</div>
