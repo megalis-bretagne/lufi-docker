@@ -46,7 +46,7 @@ RUN mkdir -p themes/megalis/
 COPY themes/megalis themes/megalis/
 COPY --chmod=760 --chown=nonroot:nonroot docker-entrypoint.sh /home/nonroot/lufi/docker-entrypoint.sh
 
-RUN carton install --deployment --without=test --without=mysql \
+RUN carton install --deployment --without=test  \
     && rm -rf local/cache/* local/man/*
 RUN chown -R nonroot:nonroot .
 
