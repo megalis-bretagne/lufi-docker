@@ -17,6 +17,8 @@ RUN apt update \
 	libssl-dev \
     zlib1g-dev \
 	libio-socket-ssl-perl \
+ 	libmariadbd-dev \
+	libmariadb-dev-compat \
 	libmojo-pg-perl \
 	liblwp-protocol-https-perl \
 	&& apt-get clean -y \
