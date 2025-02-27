@@ -5,7 +5,7 @@ volumes:
 
 configs:
   lufi_config.v1:
-    file: config/opensignature/Config.php
+    file: lufi.conf
 
 services:
   lufi:
