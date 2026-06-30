@@ -75,7 +75,7 @@ msgstr "À propos"
 
 #: themes/default/templates/index.html.ep:107
 msgid "Add a password to file(s)"
-msgstr "Ajouter un mot de passe au(x) fichier(s)"
+msgstr "Ajouter un mot de passe au(x) fichier(s) (le mot de passe doit contenir uniquement des lettres, chiffres et les caractères suivants: !@#$%^&*)"
 
 #: themes/default/templates/mail.html.ep:16
 msgid "Adding URLs not related to this Lufi instance to the mail body or subject is prohibited."
