@@ -51,7 +51,7 @@ msgstr "%A %d %B %Y à %T"
 
 #: themes/default/templates/partial/index.js.ep:28
 msgid "(max size: XXX)"
-msgstr "(taille max : XXX)"
+msgstr "Dossiers compressés au format ZIP et/ou document(s) à l’unité (taille max totale : XXX)"
 
 #: themes/default/templates/index.html.ep:5
 msgid "1 year"
